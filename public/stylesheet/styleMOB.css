@@ -1,0 +1,642 @@
+/* Mobile for MAX_WIDTH 768 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media (max-width: 480px) {
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+    background-color: #F5F5F7;
+    /* background-color: #F4B40F; */
+    
+}
+
+button{
+    color: black;
+}
+
+.cursor{
+    display: none;
+}
+
+.heroSec {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 2vh;
+    background-image: url('/images/Hero/2.png');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroContent{
+    width: 90%;
+    text-align: none;
+    display: block;
+    justify-content: none;
+    margin-bottom: none;
+    margin-top: 5vh;
+}
+
+.gobtn{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 6vh;
+    border-radius: 2vh;
+    color: black;
+    background: #F4B40F;
+    margin-left: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    position: relative;
+    left: 0vh;
+    cursor: pointer;
+}
+
+
+#heroP1{
+    color: #F5F5F7;
+    font-size: 5.5vh;
+    font-weight: 400;
+    text-align: left;
+}
+#heroP2{
+    color: #F4B40F;
+    font-size: 5vh;
+    font-weight: 400;
+    text-align: left;
+    margin-top: .5vh;
+}
+#heroP3{
+    color: #F5F5F7;
+    margin: 1vh;
+    font-size: 2.5svh;
+    font-weight: 200;
+    text-align: left;
+    margin-top: none;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 8vh;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 20vh;
+    z-index: 999;
+
+}
+
+.logo p{
+    font-size: 2.5vh;
+    margin: 2.5vh 0 0 3vh;
+}
+
+
+.nav-bar ul{
+    display: none;
+    gap:11vh;
+    margin-top: 3vb;
+    list-style-type: none;
+    font-size: 2.4vh;
+    font-weight: 400;
+}
+
+.nav-bar a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-bar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.7vh; /* Adjust based on your font size */
+    width: 0;
+    height: 0.4vh; /* Adjust thickness */
+    background: #F4B40F;
+    transition: width 0.3s ease-out;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+} 
+
+.btn{
+    display: none;
+    border: none;
+    outline: none;
+    width: 18vb;
+    height: 6vh;
+    margin-top: 1.5vh;
+    border-radius: 2vh;
+    background: #F4B40F;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#menu-RES, #close{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    margin-top: 1vh;
+    font-size: 4vh;
+}
+
+
+.menu-RES{
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 90vh;
+    font-size: 4vh;
+    background-color: #F4B40F;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: width 0.3s ease-out;
+    padding-bottom: 20vh;
+
+}
+
+.menu-RES i{
+    background-color: #F4B40F;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+}
+
+.list{
+    display: none;
+    list-style-type: none;
+   
+}
+
+.menu-RES a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/*--------------------- MAIN ------------------------*/
+
+button{
+    cursor: pointer;
+}
+
+/*-------------Title--------------*/
+
+.titleA{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    margin: 12vh 0 5vh 0;
+    padding: 2vh;
+}  
+
+.titleA h2{
+    font-weight: 200;
+    font-size: 6vh;
+}
+
+.titleA span{
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: left;
+   text-align: left;
+}
+.titleA span p{
+    width: 100%;
+    font-size: 2vh;
+    font-weight: 200;
+    margin-bottom: 2vh;
+}
+
+.vrtline{
+    width: 0.2vb;
+    height: 11vh;
+    margin: 3vh 0 0 0;
+    background-color: black;
+    display: none;
+}
+
+.bottomLine{
+    width: 0;
+    width: 90vw;
+    height: 0.1vh;
+    background-color: black;
+}
+
+/*-------------ExpertiesCSS--------------*/
+
+.Experties{
+    display: grid;
+    justify-content: center;
+}
+
+.row{
+    margin: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3vh;
+}
+
+.card{
+    width: 20vh;
+    height: 20vh;
+    padding: 1.5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 180, 15);
+    border-radius: 2vh;
+    opacity: 0.67;
+    box-shadow: 0 0 2vh 2vh rgba(223, 217, 217, 0.727) ;
+}
+
+.card h2{
+    font-weight: 400;
+}
+
+.card p{
+    font-size: 1vh;
+}
+
+.card:hover{
+  background: rgba(245, 180, 15, 0.7);
+  backdrop-filter: blur(100px);
+
+}
+
+/*-------------ClientCSS--------------*/
+
+.clients{
+    display: grid;
+    justify-content: center;
+    padding: 1vh;
+}
+
+.clientRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;      
+    width: 100%;
+    gap: 4vh;
+
+}
+
+.clientcard{
+    width: 20vh;
+    height: 20vh;
+    position: relative;
+    border-radius: 1vh;
+    /* border: 0.1vh solid rgb(118, 118, 118); */
+    /* background-image: url("/images/image.png"); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clinetImg{
+    width: 100%;
+    height: 100%;
+}
+
+.clientDetails p{
+    display: none;
+}
+
+.clientDetails{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    font-size: 2vh;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    /* Background color with transparency */
+    background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px); /* Blur level */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+
+}
+
+.clientcard:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 0 2vh 2vh rgba(223, 217, 217, 0.727) ;
+  transition: all .3s ease;
+}
+
+.AboutBtn{
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 3vh;
+    font-size: 1.5vh;
+    border-radius: 2vh;
+    color: black;
+    background: rgb(244, 180, 15, 0.75);
+    cursor: pointer;
+}
+
+/*-------------PortfolioCSS--------------*/
+
+.titleB{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 2vh;
+    margin: 25vh 0 2.5vh 0;
+}
+.titleC{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh;
+    margin: 15vh 0 2.5vh 0;
+}
+
+.titleTxt{
+    display: grid;
+    justify-content: start;
+}
+
+.minorText{
+    font-size: 2vh;
+    font-weight: 200;
+}
+
+.majorText{
+    width: 40vh;
+    font-size: 5vh;
+    font-weight: 300;
+}
+.majorTextB{
+    width: 60vh;
+    font-size: 6vh;
+    font-weight: 300;
+}
+
+.midLine{
+    width: 90vw;
+    height: 0.1vh;
+    background-color: black;
+}
+
+.midLineB{
+    width: 90vw;
+    height: 0.2vh;
+    margin-top: 2vh;
+    background-color: black;
+}
+
+.myPort{
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 5vh;
+    border-radius: 2vh;
+    color: black;
+    background-color: #F4B40F;
+    margin: 2vh 2vh 1vh 0vh;
+}
+
+.slider{
+    display: grid;
+    overflow: hidden; /* Hide extra content */
+    width: 100%;
+    height: 30vh; /* Fixed height for the visible slider */
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.project{
+    display: flex;
+    padding: 2vh;
+    transition: transform 5s ease-in-out;
+}
+
+.projectImg{
+    width: 50%;
+    background-image: url('/images/flat-lay-photography-concept-black-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projectInfo{
+    width: 50%;
+    height: 25vh;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    background-color: #2C2929;
+    padding-left: 1vh;
+}
+
+.title{
+    font-size: 3vh;
+    margin-top: -5vh;
+    font-weight: 300;
+    color: white;
+}
+
+.subTitle{
+    display: none;
+    font-size: 1vh;
+    font-weight: 300;
+    color: rgb(153, 153, 153);
+}
+
+.description{
+    width: 100%;
+    font-size: 1vh;
+    color: rgb(202, 197, 197);
+}
+
+.expbtn{
+    margin-top: -1vh;
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 2vh;
+    font-size: 1vh;
+    border-radius: 2vh;
+    color: black;
+    background: #F4B40F;
+}
+
+/*-------------TestimonialCSS--------------*/
+
+
+.testimonial{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vh;
+    gap: 2.5vh;
+    overflow-y: scroll;
+}
+
+.review{
+    min-width: 100%;
+    height: 20vh;
+    background-color: #f4b30f31;
+    padding: 1vh;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2vh;
+    color: black;
+    margin: 1vh 0 1vh 0;
+}
+
+.userImg{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #F4B40F;
+    border: .2vh solid rgba(14, 13, 13, 0.324);
+}
+
+.userName{
+    font-weight: 500;
+}
+
+.userReview{
+    font-size: 2vh;
+    color: rgb(94, 91, 91);
+}
+
+/*-------------ContactCSS--------------*/
+
+.contact{
+    display: grid;
+    padding: 2vh;
+}
+
+.contImg{
+    width: 100%;
+    height: 20vh;
+    background-color: #F4B40F;
+    background-image: url(/images/home-workspace-minimalistic-design.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contInfo{
+    width: 100%;
+    display: grid;
+    background-color: #f4b30f31;
+    padding: 2vh;
+    gap: 2vh;
+}
+
+.contInfo p{
+    font-weight: 300;
+    margin: 1vh;
+}
+
+.contInfo input{
+    width: 100%;
+    height: 5vh;
+    padding: 2vh;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    border-radius: 2vh;
+}
+
+.contInfo textarea{
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 6vh;
+    margin-top: 1vh;
+    border-radius: 2vh;
+    color: black;
+    font-size: 1vh;
+    background-color: #F4B40F;
+    
+}
+
+.tagline{
+    margin: 10vh 0 10vh 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#email{
+    margin: .5vh 3vh 0 0;
+    font-size: 1.5vh;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #F4B40F;
+}
+
+.tagline p{
+    font-size: 5.5vh;
+  font-family: "Charm", cursive;
+    color: black;
+}
+
+.tagline span{
+    font-size: 5vh;
+    font-family: "Pristina";
+    color: #F4B40F;
+}
+
+}

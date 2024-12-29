@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCEmedia</title>
+    <link rel="stylesheet" href="/stylesheet/styleHeader.css">
+    <link rel="stylesheet" href="/stylesheet/styleMain.css">
+    <link rel="stylesheet" href="/stylesheet/styleFooter.css">  
+    <link rel="stylesheet" href="/stylesheet/styleMOB.css">
+    <link rel="stylesheet" href="/stylesheet/styleTAB.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- HEADER --- HEROSECTION --->
+    <div class='heroSec'>
+      <div class="cursor"></div>
+        <div class="nav-bar">
+            <div class="logo"><p>RollCameraEdit</p></div> 
+            <ul>
+                <li><a href="#experties" >Experties</a></li>
+                <li><a href="#clients" >Clients</a></li>
+                <li><a href="#portfolio" >Portfolio</a></li>
+                <li><a href="#testimonial" >Testimonial</a></li>
+            </ul>
+            <button onclick="window.location.href='#feedback'" class='btn'>Feedback</button>
+            <button id="menu-RES"><i  class="fa-solid fa-bars"></i></button>
+        </div>
+            <div class="heroContent">
+            <p id = "heroP1">Empowering Brands in the</p>
+            <p id = "heroP2">Digital Age</p>
+            <p id = "heroP3">Transform your vision into a powerfull brand</p>
+            <button onclick="window.location.href='/form'" class='gobtn'>Let’s Elevate Your Brand</button>
+        </div>
+    </div>
+    <div class="menu-RES">
+      <button id ="close"> <i class="fa-solid fa-x"></i></button>
+      <ul class="list">
+        <li><a onclick="anchor1()"  href="#experties" >Experties</a></li>
+        <li><a onclick="anchor2()"  href="#clients" >Clients</a></li>
+        <li><a onclick="anchor3()"  href="#portfolio" >Portfolio</a></li>
+        <li><a onclick="anchor4()"  href="#testimonial" >Testimonial</a></li>
+    </ul>
+    </div>
+
+    <!-- MAIN --- EXPERTIES --->
+    <div id="experties" class='titleA'>
+      <h2>Our Expertise</h2>
+      <span><p>We have many clients in Agencies, Research Institute, Advertising and Television industries across the nation. Below are some of our precious clients.</p></span>
+      <div class="bottomLine">
+      </div>
+      <div class="vrtline"></div>
+    </div>
+
+    <div class='Experties'>
+        <div class="row">
+          <% RCEData_E.forEach((Data)=>{ %>
+            <div class='card'>
+              <h2><%= Data.ExpertiesTitle %></h2>
+              <p><%= Data.ExpertiesInfo %></p>
+            </div>
+            <% }) %>
+          </div>
+      </div>
+
+    <!-- MAIN --- CLIENTS --->
+
+    <div id="clients" class='titleA'>
+            <h2>Our Clients</h2>
+            <span><p>We have many clients in Agencies, Research Institute, Advertising and Television industries across the nation. Below are some of our precious clients.</p></span>
+            <div class="bottomLine">
+            </div>
+            <div class="vrtline"></div>
+        </div>
+
+    <div class='clients'>
+            <div class="clientRow">
+              <% RCEData_C.forEach((Data)=>{ %>
+                <div class='clientcard'>
+                  <!-- I am using localhost in URL -->
+                  <img class='clinetImg' src="<%= Data.ClientImage%>"> 
+                  <div class="clientDetails">
+                  <p><%= Data.ClientName %></p>
+                  <button class='AboutBtn'>About</button>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+      </div>
+
+    <!-- MAIN --- PROTFOLIO --->
+
+    <div id="portfolio" class='titleB'>
+            <div class="titleTxt">
+              <div class="minorText">Recent Projects</div>
+              <div class="majorText">Our Protfolio</div>
+            </div>
+            <div class="midLine">
+            </div>
+            <button onclick="window.location.href='/portfolio'" class="myPort">View More</button>
+    </div>
+
+    <div class='slider' id="slider">
+      <% RCEData_P.forEach((Data)=>{ %>
+        <div class='project'>
+          <div class="projectImg"></div>
+            <div class="projectInfo">
+                <div class="title"><%= Data.ProjectTitle %></div>
+                <div class="subTitle"><%= Data.ProjectSubTitle %></div>
+                <div class="description"><%= Data.ProjectDiscription %></div>
+                <button class="expbtn">Explore</button>
+            </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <!-- MAIN --- TESTIMONIAL --->
+
+    <div id="testimonial" class='titleB'>
+            <div class="titleTxt">
+              <div class="minorText">Client Feedbacks</div>
+              <div class="majorText">Client Testimonials</div>
+            </div>
+            <div class="midLine"></div>
+        </div>
+        
+    <div class='testimonial'>
+      <% RCEData_T.forEach((Data)=>{ %>
+        <div class="review">
+          <div class="userInfo">
+              <div class="userImg"></div>
+              <div class="userName"><%= Data.NameOfTestimonial %></div>
+          </div>
+              <div class="userReview">
+                  <p>
+                    <%= Data.Testimonial %>
+                  </p>
+              </div>
+        </div>
+      <% }) %>
+    </div>
+
+    <!-- MAIN --- CONTACT --->
+    <div  class='titleA'>
+            <h2>Feedback</h2>
+            <span><p>We have many clients in Agencies, Research Institute, Advertising and Television industries across the nation. Below are some of our precious clients.</p></span>
+            <div class="bottomLine">
+            </div>
+            <div class="vrtline"></div>
+    </div>
+
+    <div id="feedback" class='contact'>
+            <div class="contImg"></div>
+            <div class="contInfo">
+              <form id="contact-form">
+                <div class="field">
+                  <p><label for="name">Name</label></p>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="field">
+                  <p><label for="email">Email Address</label></p>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div class="field">
+                  <p><label for="message">Message</label></p>
+                  <textarea type="text" name="message" id="message"></textarea>
+                </div>
+              
+                <button style="cursor: pointer; font-size: 2.5vh;" type="submit" id="button" class="submit" value="Send Feedback" >Send Feedback</button>
+              </form>
+            </div>
+    </div>
+
+    <!-- MAIN --- TAGLINE --->
+    <div class='tagline'>
+        <p>Let's Build Together<span>.</span></p>
+        <p id='email'>hello@skillbirdge.com</p>
+    </div>
+
+    <!-- FOOTER --- FOOTER --->
+    <div class='footer'>
+        <div class="footInfo">
+        <h3>RollCameraEdit</h3>
+        <ul>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+        </ul>
+        <div class="socialMediaIcon">
+          <div class="smI"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="smI"><i class="fa-brands fa-instagram"></i></div>
+          <div class="smI"><i class="fa-brands fa-meta"></i></div>
+        </div>
+        </div>
+        <hr />
+        <p>RollCameraEdit &copy; All Rights Reserved</p>
+      </div>
+      <script src="/javascript/animation.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="/javascript/scrollScript.js"></script>
+      <script src="/javascript/MOB-res.js"></script>
+      <script src="/javascript/email.js"></script>
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init({
+              publicKey: "LLg8UjZqCH7c7pwk1",
+            });
+        })();
+      </script>
+</body>
+</html>

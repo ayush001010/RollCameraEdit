@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCEmedia Portfolio</title>
+    <link rel="stylesheet" href="/stylesheet/styleFooter.css">
+    <link rel="stylesheet" href="/stylesheet/stylePortfolio.css">
+    <link rel="stylesheet" href="/stylesheet/styleMOB_Proj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button class="backBtn" onclick="window.location.href='/'">Back</button>
+    <div class="portfolioHead"><p>RollCameraEdit</p></div>
+    <div class="mediaRoll">
+        <% RCEData_P2.forEach((Data, Index)=>{ %>
+                <% if(Index % 2 == 0){ %>
+                    <p class="name"><i class="fa-solid fa-camera-retro"></i><%= Data.ProjectClient %></p>
+                    <div class="mediaDiv">
+                        <div class="mediaImage"><img src="<%= Data.ProjectImage %>" alt=""></div>
+                        <div class="mediaInfo">
+                            <h3>
+                                <%= Data.ProjectTitle %> 
+                            </h3>
+                            <p>
+                                <%= Data.ProjectDiscription %> 
+                            </p>
+                            <button class="btn" onclick="window.location.href=''">Discover</button>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <p class="name"><i class="fa-solid fa-camera-retro"></i><%= Data.ProjectClient %></p>
+                    <div class="mediaDiv">
+                        <div class="mediaInfo-L">
+                            <h3>
+                                <%= Data.ProjectTitle %> 
+                            </h3>
+                            <p>
+                                <%= Data.ProjectDiscription %> 
+                            </p>
+                            <button class="btn" onclick="window.location.href=''">Discover</button>
+                        </div>
+                        <div class="mediaImage-L"><img src="<%= Data.ProjectImage %>" alt=""></div>
+                        <div class="mediaInfo-MOB">
+                            <h3>
+                                <%= Data.ProjectTitle %> 
+                            </h3>
+                            <p>
+                                <%= Data.ProjectDiscription %> 
+                            </p>
+                            <button class="btn" onclick="window.location.href=''">Discover</button>
+                        </div>
+                    </div>
+                <% } %>
+            <% }) %>
+        <!-- <div class="mediaCardRow">
+        <% RCEData_P2.forEach((Data, Index)=>{ %>
+                <% if(Index % 6 != 0){ %>
+                        <div class="mediaCard">
+                            <div class="mediaCardImage"><img src="<%= Data.ProjectImage %> " alt=""></div>
+                            <div class="mediaCardInfo">
+                                <h3>
+                                    <%= Data.ProjectTitle %>  
+                                </h3>
+                                <p style="font-size: 2vh;">
+                                    <%= Data.ProjectDiscription %> 
+                                </p>
+                                <button class="btn" onclick="window.location.href=''">Discover</button>
+                            </div>
+                        </div>
+                <% } %>
+        <% }) %>
+        </div> -->
+    </div>
+    <!-- FOOTER --- FOOTER --->
+    <div class='footer'>
+        <div class="footInfo">
+        <h3>RollCameraEdit</h3>
+        <ul>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+          <li>Option</li>
+        </ul>
+        <div class="socialMediaIcon">
+          <div class="smI"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="smI"><i class="fa-brands fa-instagram"></i></div>
+          <div class="smI"><i class="fa-brands fa-meta"></i></div>
+        </div>
+        </div>
+        <hr />
+        <p>RollCameraEdit &copy; All Rights Reserved</p>
+      </div>
+</body>
+</html>

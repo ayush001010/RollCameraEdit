@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #F5F5F7;
+    /* background-color: #F4B40F; */
+}
+
+button{
+    color: black;
+}
+
+/*-------------FooterCSS--------------*/
+
+.footer{
+    margin-top: 30vh;
+    height: 50vh;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+.footer hr{
+    margin: 5vh;
+}
+.footer p{
+    margin: 5vh;
+    font-weight: 200;
+    color: white;
+}
+
+.footInfo{
+    padding: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footInfo h3{
+    color: white;
+    font-size: 3vh;
+    font-weight: 300;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 4vh;
+    list-style: none;
+}
+
+.socialMediaIcon{
+    display: flex;
+    justify-content: space-between;
+    gap: 4vh;
+}
+
+.smI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #F4B40F;
+    color: black;
+}
+
+
+/*-------------FooterCSS--------------*/
+@media (max-width: 480px) {
+.footer{
+    margin-top: 20vh;
+    width: 100%;
+    height: 50vh;
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+}
+
+.footer hr{
+    margin: 5vh;
+}
+.footer p{
+    margin: 5vh;
+    font-weight: 200;
+    color: white;
+}
+
+.footInfo{
+    width: 100%;
+    padding: 4vw;
+    display: grid;
+    gap: 4vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.footInfo h3{
+    margin-top: 2vh;
+    color: white;
+    font-size: 3vh;
+    font-weight: 300;
+}
+
+.footer ul{
+    display: none;
+}
+
+.socialMediaIcon{
+    display: flex;
+    justify-content: space-between;
+    gap: 4vh;
+    margin-top: 4vh;
+}
+
+.smI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #F4B40F;
+    color: black;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer{
+        margin-top: 20vh;
+        width: 100%;
+        height: 60vh;
+        background-color: #1c1c1c;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer hr{
+        margin: 5vh;
+    }
+    .footer p{
+        margin: 5vh;
+        font-weight: 200;
+        color: white;
+    }
+    
+    .footInfo{
+        width: 100%;
+        padding: 4vw;
+        display: grid;
+        gap: 4vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footInfo h3{
+        margin-top: 2vh;
+        color: white;
+        font-size: 3vh;
+        font-weight: 300;
+    }
+    
+    .footer ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 4vh;
+        list-style: none;
+    }
+    }
+    
+    .socialMediaIcon{
+        display: flex;
+        justify-content: space-between;
+        gap: 4vh;
+        margin-top: 4vh;
+    }
+    
+    .smI{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+        background-color: #F4B40F;
+        color: black;
+    }
+    

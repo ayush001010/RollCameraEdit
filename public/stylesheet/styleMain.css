@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body{
+    background-color: #F5F5F7;
+    overflow-x: hidden;
+    /* background-color: #F4B40F; */
+}
+
+button{
+    cursor: pointer;
+    color: black;
+}
+
+/*-------------Title--------------*/
+
+.titleA{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 15vh 0 10vh 0;
+}  
+
+.titleA h2{
+    font-weight: 300;
+    font-size: 6vh;
+}
+
+.titleA span{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.titleA span p{
+    width: 50%;
+    font-size: 2.5vh;
+    font-weight: 200;
+}
+
+.vrtline{
+    width: 0.2vb;
+    height: 11vh;
+    margin: 3vh 0 0 0;
+    background-color: black;
+}
+
+.bottomLine{
+    width: 0;
+}
+
+/*-------------ExpertiesCSS--------------*/
+
+.Experties{
+    display: grid;
+    justify-content: center;
+}
+
+.row{
+    margin: 1vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vh;
+}
+
+.card{
+    width: 40vh;
+    height: 40vh;
+    padding: 4vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 180, 15);
+    border-radius: 2vh;
+    opacity: 0.67;
+    box-shadow: 0 0 2vh 2vh rgba(223, 217, 217, 0.727) ;
+}
+
+.card h2{
+    font-weight: 400;
+}
+
+.card p{
+    font-size: 2vh;
+}
+
+.card:hover{
+  background: rgba(245, 180, 15, 0.7);
+  backdrop-filter: blur(100px);
+
+}
+
+/*-------------ClientCSS--------------*/
+
+.clients{
+    display: grid;
+    justify-content: center;
+}
+
+.clientRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;      
+    width: 100%;
+
+}
+
+.clientcard{
+    width: 40vh;
+    height: 40vh;
+    position: relative;
+    border-radius: 1vh;
+    /* border: 0.1vh solid rgb(118, 118, 118); */
+    /* background-image: url("/images/image.png"); */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clinetImg{
+    width: 100%;
+    height: 100%;
+}
+
+.clientDetails{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    padding: 2vh 0 2vh 0;
+    font-weight: 400    ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    /* Background color with transparency */
+    background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+    /* Frosted glass effect */
+    backdrop-filter: blur(10px); /* Blur level */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    
+
+}
+
+.clientcard:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 0 2vh 2vh rgba(223, 217, 217, 0.727) ;
+  transition: all .3s ease;
+}
+
+.AboutBtn{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 5vh;
+    border-radius: 2vh;
+    color: black;
+    background: rgb(244, 180, 15, 0.75);
+    cursor: pointer;
+}
+
+/*-------------PortfolioCSS--------------*/
+
+.titleB{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh;
+    margin: 25vh 0 2.5vh 0;
+}
+.titleC{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh;
+    margin: 15vh 0 2.5vh 0;
+}
+
+.titleTxt{
+    display: grid;
+    justify-content: start;
+}
+
+.minorText{
+    font-size: 2vh;
+    font-weight: 200;
+}
+
+.majorText{
+    width: 40vh;
+    font-size: 6vh;
+    font-weight: 300;
+}
+.majorTextB{
+    width: 60vh;
+    font-size: 6vh;
+    font-weight: 300;
+}
+
+.midLine{
+    width: 90vw;
+    height: 0.2vh;
+    background-color: black;
+}
+
+.midLineB{
+    width: 90vw;
+    height: 0.2vh;
+    margin-top: 2vh;
+    background-color: black;
+}
+
+.myPort{
+    border: none;
+    outline: none;
+    width: 20vb;
+    height: 6vh;
+    border-radius: 2vh;
+    color: black;
+    background-color: #F4B40F;
+    margin-left: 2vw;
+}
+
+.slider{
+    display: grid;
+    overflow: hidden; /* Hide extra content */
+    width: 100%;
+    height: 60vh; /* Fixed height for the visible slider */
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.project{
+    display: flex;
+    padding: 5vh;
+    transition: transform 5s ease-in-out;
+}
+
+.projectImg{
+    width: 50%;
+    background-image: url('/images/flat-lay-photography-concept-black-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projectInfo{
+    width: 50%;
+    height: 55vh;
+    display: grid;
+    padding-left: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    background-color: #2C2929;
+}
+
+.title{
+    margin: 0vh 0 -10vh 0;
+    font-size: 6vh;
+    font-weight: 300;
+    color: white;
+}
+
+.subTitle{
+    margin: -5vh 0 -10vh 0;
+    font-size: 2.5vh;
+    font-weight: 300;
+    color: rgb(153, 153, 153);
+}
+
+.description{
+    width: 80%;
+    color: rgb(202, 197, 197);
+}
+
+.expbtn{
+    margin-top: -5vh;
+    border: none;
+    outline: none;
+    width: 20vb;
+    height: 6vh;
+    border-radius: 2vh;
+    color: black;
+    background: #F4B40F;
+}
+
+/*-------------TestimonialCSS--------------*/
+
+
+.testimonial{
+    width: 100%;
+    display: flex;
+    margin: 5vh 5vh 5vh 5vh ;
+    gap: 2.5vh;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.review{
+    min-width: 70vh;
+    height: 45vh;
+    background-color: #f4b30f31;
+    padding: 5vh;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2vh;
+    color: black;
+    margin: 4vh 0 4vh 0;
+}
+
+.userImg{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    background-color: #F4B40F;
+    border: .2vh solid rgba(14, 13, 13, 0.324);
+}
+
+.userName{
+    font-weight: 500;
+}
+
+.userReview{
+    color: rgb(94, 91, 91);
+}
+
+/*-------------ContactCSS--------------*/
+
+.contact{
+    display: flex;
+    padding: 5vh;
+}
+
+.contImg{
+    width: 50%;
+    height: 72vh;
+    background-color: #F4B40F;
+    background-image: url(/images/home-workspace-minimalistic-design.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contInfo{
+    width: 100%;
+    display: grid;
+    background-color: #f4b30f31;
+    padding: 4vh;
+    gap: 2vh;
+}
+
+.contInfo p{
+    font-weight: 300;
+    margin: 1vh;
+}
+
+.contInfo input{
+    width: 100%;
+    height: 8vh;
+    padding: 2vh;
+    font-size: 2vh;
+    border: none;
+    outline: none;
+    border-radius: 2vh;
+}
+
+.contInfo textarea{
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 2vh;
+    border-radius: 2vh;
+}
+
+#button{
+    border: none;
+    outline: none;
+    margin: 1vh;
+    width: 30vb;
+    height: 6vh;
+    border-radius: 2vh;
+    font-size: 1vh;
+    color: black;
+    background-color: #F4B40F;
+}
+
+.tagline{
+    margin: 20vh 0 10vh 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#email{
+    margin: -2vh 3vh 0 0;
+    font-size: 2.5vh;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #F4B40F;
+}
+
+.tagline p{
+    font-size: 12vh;
+    font-family: "Pristina","Charm", cursive;;
+    color: black;
+}
+
+.tagline span{
+    font-size: 12vh;
+    font-family: "Pristina";
+    color: #F4B40F;
+}
+
