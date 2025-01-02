@@ -6,7 +6,7 @@
     <title>Build Together</title>
     <link rel="stylesheet" href="/stylesheet/styleForm.css">
      <link rel="stylesheet" href="/stylesheet/styleMOB_Form.css">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
     <script src="/javascript/animation.js"></script>
 </head>
 <body>
@@ -59,15 +59,21 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz7IVUwIV2VhoJhtnjJYC4I8iLQIotHmLOVncVJ23vK8aEfvvwCe8W9gHW1_T9aoOCd/exec';
         const form = document.forms['submit-to-google-sheet'];
-
+    
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then((response) => alert("Success! Your response has been submitted."),
-            )
-                .catch((error) => alert("Error! Please try again later."));
+                .then((response) => {
+                    alert("Success! Your response has been submitted.");
+                    // Reset the form after successful submission
+                    form.reset();
+                })
+                .catch((error) => {
+                    alert("Error! Please try again later.");
+                });
         });
     </script>
+    
 </body>
 </html>
