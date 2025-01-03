@@ -212,8 +212,7 @@
 }
 
 .card:hover{
-  background: rgba(245, 180, 15, 0.7);
-  backdrop-filter: blur(100px);
+  background: rgba(245, 180, 15);
 
 }
 
