@@ -21,6 +21,11 @@
         background-color: #F5F5F7;
     }
 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
     .cursor{
         display: none;
     }
