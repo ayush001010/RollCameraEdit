@@ -86,7 +86,7 @@ button{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 180, 15);
+    background-color: #f5b40f;
     border-radius: 2vh;
     opacity: 0.67;
     box-shadow: 0 0 2vh 2vh rgba(223, 217, 217, 0.727) ;
@@ -102,7 +102,7 @@ button{
 
 .card:hover{
   background: rgba(245, 180, 15);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(50px);
 
 }
 
