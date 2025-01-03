@@ -13,6 +13,7 @@ mongoose.connect(db)
 const userSchema = mongoose.Schema({
     ClientImage: String,
     ClientName: String,
+    ClientAbout: String
 })
 
 module.exports = mongoose.model("RCEDatabaseOfClient", userSchema);
